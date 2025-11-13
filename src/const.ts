@@ -4,12 +4,12 @@ export const defaultMaxConnectionNumber: number = 10
 
 export const defaultIceServers: IceServer[] = [
   {
-    urls: 'turn:82.29.67.202:3478',
-    username: 'easytransfer',
-    credential: 'sharesimplyandstayanonymous',
+    urls: 'turn:138.2.23.231:3478',
+    username: 'myturn',
+    credential: 'share123456789',
   },
   {
-    urls: 'stun:stun.relay.metered.ca:80',
+    urls: 'stun:stun.l.google.com:19302',
   },
   {
     urls: 'turn:global.relay.metered.ca:80',
