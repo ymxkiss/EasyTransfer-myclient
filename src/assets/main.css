@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
+
+:root {
+  --primary-color: #007bff;
+  --primary-dark-color: #0056b3;
+  --primary-semi-light-color: #b6d9ff;
+  --primary-light-color: #dcecfc;
+  --primary-extra-light-color: #f0f8ff;
+  --primary-blur-color: #007bff4f;
+  --secondary-color: #6c757d;
+  --secondary-light-color: #f0f0f0;
+  --secondary-extra-light-color: #0000000f;
+  --success-color: #28a745;
+  --success-dark-color: #218838;
+  --success-semi-light-color: #28a74650;
+  --success-light-color: #d4edda;
+  --error-color: #dc3545;
+  --light-color: #f8f9fa;
+  --light-blur-color: #f8f9fa4f;
+  --dark-color: #343a40;
+  --gold-color: #ffc107;
+  --gold-light-color: #ffcd27;
+
+  --normal-font-family: 'Open Sans', sans-serif;
+  --code-font-family: 'Source Code Pro', monospace;
+
+  --border-radius: 0.5rem;
+  --small-border-radius: 0.25rem;
+
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  --blur-effect: blur(8px);
+
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    font-size: 11px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  min-height: 100vh;
+
+  font-family: var(--normal-font-family);
+
+  background-color: var(--light-color);
+  background-image: radial-gradient(
+    var(--primary-light-color) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  color: var(--dark-color);
+}
+
+.shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.blur {
+  -webkit-backdrop-filter: var(--blur-effect);
+  backdrop-filter: var(--blur-effect);
+}
